@@ -8,10 +8,14 @@
     <title>Microsoft – 雲端、電腦、應用程式和遊戲</title>
     <link rel="shortcut icon" href="./圖片img/logo/LOGO.ico" type="image/x-icon">
     <!-- fontawsome cdn -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+        integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
     <link rel="stylesheet" href="./css/style.css">
+    <!-- swiper core CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
 
-    
+
 
 
 </head>
@@ -26,28 +30,28 @@
             <div class="navigation-bar">
                 <div class="logo">
                     <a href="" class="logo-btn">
-                        <img  src="./圖片img/logo/RE1Mu3b.png" alt="">
+                        <img src="./圖片img/logo/RE1Mu3b.png" alt="">
                     </a>
                 </div>
                 <nav>
                     <ul class="menu">
                         <li class="menu-item">
-                            <a class="menu-link" href="https://www.microsoft.com/zh-tw/microsoft-365?rtc=1">Microsoft 365</a>
+                            <a class="menu-link" href="">Microsoft 365</a>
                         </li>
                         <li class="menu-item">
-                            <a class="menu-link" href="https://www.microsoft.com/zh-tw/microsoft-365/microsoft-office?rtc=1">Office</a>
+                            <a class="menu-link" href="">Office</a>
                         </li>
                         <li class="menu-item">
-                            <a class="menu-link" href="https://www.microsoft.com/zh-tw/windows/">Windows</a>
+                            <a class="menu-link" href="">Windows</a>
                         </li>
                         <li class="menu-item">
-                            <a class="menu-link" href="https://www.microsoft.com/zh-tw/surface">Surface</a>
+                            <a class="menu-link" href="">Surface</a>
                         </li>
                         <li class="menu-item">
-                            <a class="menu-link" href="https://www.xbox.com/zh-TW/">Xbox</a>
+                            <a class="menu-link" href="">Xbox</a>
                         </li>
                         <li class="menu-item">
-                            <a class="menu-link" href="https://support.microsoft.com/zh-tw">支援</a>
+                            <a class="menu-link" href="">支援</a>
                         </li>
                         <li class="menu-item">
                             <span class="menu-link">更多</span>
@@ -95,22 +99,55 @@
     <main>
         <section id="carousel">
             <div class="container">
-                <div class="carousel-container">
-                    <div class="carousel-pictrue">
+                <!-- Slider main container -->
+                <div class="swiper">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                        <!-- Slides -->
+                        <div class="swiper-slide">
+                            <div class="carousel-pictrue-1">
+                            </div>
+                            <div class="carousel-text">
+                                <h2>隨身型動力</h2>
+                                <p>Surface Go 2 結合了平板電腦的多功能性與筆記型電腦的可攜性，非常適合用來處理日常工作、家庭作業和玩樂</p>
+                                <a href="" class="buy-now-btn">
+                                    <span class="buy-now">
+                                        立刻選購
+                                    </span>
+                                    <i class="fas fa-chevron-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="carousel-pictrue-2">
+                            </div>
+                            <div class="carousel-text">
+                                <h2>Surface Laptop Go</h2>
+                                <p>運用我們所推出最輕巧的 Surface 筆記型電腦，善加利用每一天</p>
+                                <a href="" class="buy-now-btn">
+                                    <span class="buy-now">
+                                        立刻選購
+                                    </span>
+                                    <i class="fas fa-chevron-right"></i>
+                                </a>
+                            </div>
+                        </div>
+    
                     </div>
-                    <div class="carousel-text">
-                        <h2>隨身型動力</h2>
-                        <p>Surface Go 2 結合了平板電腦的多功能性與筆記型電腦的可攜性，非常適合用來處理日常工作、家庭作業和玩樂</p>
-                        <a href="" class="buy-now-btn">
-                            <span class="buy-now">
-                                立刻選購
-                            </span>
-                            <i class="fas fa-chevron-right"></i>
-                        </a>
-                    </div>
+                    <!-- If we need pagination -->
+                    <div class="swiper-pagination"></div>
+    
+                    <!-- If we need navigation buttons -->
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+    
+                    <!-- If we need scrollbar -->
+                    <div class="swiper-scrollbar"></div>
                 </div>
+                <!-- <div class="carousel-container"> 
+                </div> -->
             </div>
-        </section>
+        </section>        
 
         <section id="system-buy">
             <div class="container">
@@ -216,7 +253,7 @@
         <section id="OneDrive">
             <div class="container">
                 <div class="carousel-container">
-                    <div class="carousel-pictrue">
+                    <div class="carousel-pictrue-3">
                     </div>
                     <div class="carousel-text">
                         <h2>Microsoft OneDrive</h2>
@@ -287,7 +324,7 @@
                             </div>
                             <h3>混合辦公解決方案</h3>
                             <p>了解我們的方法、Microsoft 這一路以來所得到的教訓，以及如何增強員工能力並滿足新客戶需求。</p>
-                            <a href=""class="business-btn">
+                            <a href="" class="business-btn">
                                 <span>深入了解</span>
                                 <i class="fas fa-chevron-right"></i>
                             </a>
@@ -316,7 +353,7 @@
 
         <section>
             <div class="container">
-                
+
             </div>
         </section>
 
@@ -491,6 +528,28 @@
             </div>
         </div>
     </footer>
+
+    <!-- swiper core  -->
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper('.swiper', {
+            // Optional parameters
+            loop: true,
+
+            // If we need pagination
+            pagination: {
+                el: '.swiper-pagination',
+            },
+
+            // Navigation arrows
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+
+
+        });
+    </script>
 </body>
 
 </html>
